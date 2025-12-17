@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birdsboro Cemetery - Where Tradition Meets Compassion</title>
+    <meta name="description" content="Birdsboro Cemetery - A sanctuary for memory and reflection. Est. 1890, Birdsboro, Pennsylvania.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #4a5745;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #4a5745 0%, #3d4a39 100%);
+        }
+
+        .hero {
+            max-width: 1400px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            padding: 2rem;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .hero-title {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .hero-title .tradition {
+            font-style: normal;
+        }
+
+        .hero-title .compassion {
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            font-weight: 300;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .memorial-shape {
+            width: 450px;
+            height: 600px;
+            background: rgba(139, 156, 139, 0.3);
+            border-radius: 225px 225px 50px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .leaf-icon {
+            width: 120px;
+            height: 200px;
+            border: 3px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            transform: rotate(0deg);
+        }
+
+        /* Footer Styles */
+        .footer {
+            width: 100%;
+            max-width: 1400px;
+            margin-top: 4rem;
+            padding: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer-title {
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-info {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .hero-description {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            .memorial-shape {
+                width: 350px;
+                height: 500px;
+            }
+
+            .footer-content {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 0.75rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .memorial-shape {
+                width: 280px;
+                height: 400px;
+            }
+
+            .leaf-icon {
+                width: 90px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .memorial-shape {
+                width: 220px;
+                height: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <div class="subtitle">EST. 1890 • BIRDSBORO, PENNSYLVANIA</div>
+                <h1 class="hero-title">
+                    <span class="tradition">Where Tradition</span><br>
+                    <span class="compassion">Meets Compassion</span>
+                </h1>
+                <p class="hero-description">
+                    A sanctuary for memory and reflection. Rooted in compassion and guided by a commitment to dignity, we provide families with a beautifully maintained environment where peace comes naturally.
+                </p>
+            </div>
+            <div class="hero-image">
+                <div class="memorial-shape">
+                    <div class="leaf-icon"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-title">Location</div>
+                    <div class="footer-info">
+                        1018 E Main St<br>
+                        Birdsboro, PA 19508
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <div class="footer-title">Contact</div>
+                    <div class="footer-info">
+                        <a href="tel:+16105828627" class="footer-link">Phone: (610) 582-8627</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <div class="footer-title">Hours</div>
+                    <div class="footer-info">
+                        <strong>Office:</strong> Mon-Fri, 9AM-2PM<br>
+                        <strong>Grounds:</strong> Dawn to Dusk
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                © 2024 Birdsboro Cemetery. Where Tradition Meets Compassion.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
